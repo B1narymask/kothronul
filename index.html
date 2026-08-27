@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Koþronul course</title>
+</head>
+<body>
+  <nav class="sticky-nav">
+    <ul>
+      <li><a href="#">......</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="lesson1" class="lesson">
+      <h2>Lesson 1: Simple Vocab</h2>
+      <p>Cétir: cat</p>
+      <p>Kotios: dog</p>
+      <p>peþ: and</p>
+      <small>if you don't have 'þ', you can replace it with 'th'</small>
+      <p>ati: a/an</p>
+
+      <h3>Practice: How do you say 'a dog and a cat'?</h3>
+      <input type="text" id="les1">
+      <p class="feedback" id= "fb1"></p>
+      <button onclick="checkAnswer('les1', 'ati kotios peþ ati cétir', 'ati kotios peth ati cétir', 'fb1')">Submit</button>
+    </section>
+
+    <section id="lesson2" class=lesson>
+      <h2>Lesson 2: Gender</h2>
+      <small>time to be a little woke</small> <br>
+      <small>...</small>
+      <small>I'm so unfunny sorry ;-; </small>
+
+      <p>Gender is defined by the last vowel of the word.</p>
+      <table class="gender-table">
+        <thead>
+          <tr>
+            <th>Gender</th>
+            <th>Vowel</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Masculine</td>
+            <td>a, o</td>
+            <td><span class="conlang">kotios</span> (dog)</td>
+          </tr>
+          <tr>
+            <td>Feminine</td>
+            <td>i, e</td>
+            <td><span class="conlang">cétir</span> (cat)</td>
+          </tr>
+          <tr>
+            <td>Neuter</td>
+            <td>u</td>
+            <td><span class="conlang">xesseud</span> (house)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>You might've noticed that none of the examples actually <i>end</i> in the vowel of their respective gender.</p>
+      <p>That's because they're not supposed to.</p>
+      <p>When I said <i>"defined by the <b>last vowel</b> of the word"</i>, I meant the last <i>vowel</i>, not the last <i>letter</i>.</p>
+
+      <h2>Practice! What gender is the word <span class="hhl">'caket'</span> (jacket)?</h2>
+
+      <input type="radio" name="lesson2-practice" value="masculine"> masculine <br>
+      <input type="radio" name="lesson2-practice" value="feminine"> feminine <br>
+      <input type="radio" name="lesson2-practice" value="neuter"> neuter <br>
+      <button onclick="checkRad('lesson2-practice', 'feminine', 'fb2')">submit</button>
+      <p id="fb2">.</p>
+    </section>
+
+    <section id="l3" class=lesson>
+      <h2>Lesson 3: Classes and Articles</h2>
+      <p>Koþronul has 3 classes.</p>
+      <h5>"but what are classes?"</h5>
+      <p>Noun classes are basically just categories each noun is put into.</p>
+      <p>You can't just have a noun without a class.</p>
+      <p>In Koþronul, classes matter for <span class="hl">articles and plurals</span>. </p>
+      <p>The 3 classes respectively are: <span class="hl">animate, inanimate & abstract</span></p><br>
+      <p>Koþronul hass a 3x3 article system: each gender and class combination has its own article.</p>
+      <p>for example, there's an article for masculine inanimate, feminine inanimate, neuter abstract, etc.</p>
+      <p>Here's the full table:</p>
+      <table>
+        <tr>
+          <th>Gender / class</th>
+          <th>Animate</th>
+          <th>Inanimate</th>
+          <th>Abstract</th>
+        </tr>
+        <tr>
+          <th>Masculine</th>
+          <td>nox</td>
+          <td>ca</td>
+          <td>xlio</td>
+        </tr>
+        <tr>
+          <th>Feminine</th>
+          <td>be</td>
+          <td>yev</td>
+          <td>ic</td>
+        </tr>
+        <tr>
+          <th>Neuter</th>
+          <td>uhs</td>
+          <td>uud</td>
+          <td>stu</td>
+        </tr>
+      </table> <br>
+      <small>"but how can i tell which class a word is?"</small>
+      <p>Oh, that!</p>
+      <p>You kinda... Can't...</p>
+      <p>There really no way to consistently tell what class a word would be other than just guessing</p>
+
+      <h2>Practice!! Translate 'the dog, the cat, the jacket and the house'?</h2>
+      <h3 class=hhl><i>IMPORTANT: IF YOU MISS THE COMMAS THE EXCERCISE WILL BE INVALID</i></h3>
+      <small> hint: caket is inanimate, xesseud is abstract </small><br>
+      <input type="text" id="les3">
+      <p class="feedback" id= "fb3"></p>
+      <button onclick="checkAnswer('les3', 'nox kotios, be cétir, yev caket peþ stu xesseud', 'nox kotios, be cétir, yev caket peth stu xesseud', 'fb3')">Submit</button>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

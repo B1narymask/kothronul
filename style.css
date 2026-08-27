@@ -1,0 +1,110 @@
+:root{
+  --flag-blue: #4484BF;
+  --white: #FFF;
+  --small: #1a2e1a99;
+  --flag-green: #66CE5F;
+  --bg: #4d9c48;
+  --main: #1a2e1a;
+  --gloss: #62819e; /* desaturated version of --flag-blue */
+  --lemon: #e1f06e;
+  --idk: #6ed8f0;
+  --table-accent: #64b05f;
+}
+/* I still have no clue what this is supposed to be for.. */
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* The magic responsive text that shrinks on phones */
+body {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.6;
+  max-width: 75ch;
+  margin: 0 auto;
+  padding: clamp(1rem, 4vw, 3rem);
+  background-color: var(--bg);
+  color: var(--main);
+  font-family: 'Verdana';
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+small {
+  color: var(--small);
+  font-style: italic;
+}
+/*highlight*/
+.hl { color: var(--flag-blue); }
+/*high-highlight (so that I don't have to type <b></b> every five seconds*/
+.hhl, .conlang { color: var(--flag-blue); font-weight: bold; }
+
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(102, 206, 95, 0.2); /* Green-tinted shadow */
+}
+
+.article-table th {
+  background-color: var(--flag-green);
+  color: white;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.article-table td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid #e0f0de;
+  text-align: center;
+}
+
+.article-table tr:nth-child(even) {
+  background-color: #f3faf2;  /* Alternating very light green rows */
+}
+
+.lesson {
+  background-color: var(--flag-green);
+  padding: 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.75rem;
+  border: 2px solid var(--flag-blue);
+}
+
+.feedback {
+  color: #00000000;
+  font-size: 1.25rem;
+  margin: 0 0;
+}
+
+button {
+  background-color: var(--gloss);
+  color: var(--white);
+  border: var(--idk) solid 0.29rem /*0.78rem*/;
+  border-radius: 0.48rem;
+}
+
+input { border-radius: 0.48rem; }
+
+table, th, td {
+  border: solid black;
+  /*padding: 0.26rem;*/
+}
+
+th, td {
+  padding: 0.26rem;
+}
+
+table td:nth-child(even), th:nth-child(even){
+  background-color: var(--table-accent);
+}
