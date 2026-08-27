@@ -19,7 +19,7 @@ function checkAnswer(id, correct1, cor2, feedId) {
 function checkRad(name, correct, feedId) {
     console.log("hi")
     let answer = '';
-    let rads = document.getElementsByName("lesson2-practice");
+    let rads = document.getElementsByName(name);
     for (let i = 0; i < rads.length; i++) {
         if (rads[i].checked) {
             answer = rads[i].value;
