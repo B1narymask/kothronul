@@ -6,19 +6,12 @@
   /*--bg: #4d9c48;*/
   /*--main: #1a2e1a;*/
   --main: #152638;
-  --gloss: #62819e; /* desaturated version of --flag-blue */
+  --gloss: #62819e;
   --lemon: #e1f06e;
   --idk: #6ed8f0;
   --table-accent: #64b05f;
 }
-/* I still have no clue what this is supposed to be for.. */
-.lesson-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
 
-/* The magic responsive text that shrinks on phones */
 body {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   line-height: 1.6;
@@ -45,7 +38,7 @@ small {
 }
 /*highlight*/
 .hl { color: var(--flag-green); }
-/*high-highlight (so that I don't have to type <b></b> every five seconds*/
+/*high-highlight*/
 .hhl, .conlang { color: var(--flag-green); font-weight: bold; }
 
 .lesson {
@@ -80,8 +73,3 @@ table, th, td {
 th, td {
   padding: 0.26rem;
 }
-
-/*table td:nth-child(even), th:nth-child(even){
-  background-color: var(--table-accent);
-}
-*/
