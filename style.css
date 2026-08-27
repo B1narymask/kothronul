@@ -1,15 +1,10 @@
 :root{
   --flag-blue: #4484BF;
-  --white: #FFF;
   --small: #15263899;
   --flag-green: #66CE5F;
-  /*--bg: #4d9c48;*/
-  /*--main: #1a2e1a;*/
   --main: #152638;
   --gloss: #62819e;
-  --lemon: #e1f06e;
   --idk: #6ed8f0;
-  --table-accent: #64b05f;
 }
 
 body {
