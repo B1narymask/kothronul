@@ -5,36 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="icon.png">
-  <title>Koþronul course</title>
+  <title>Unit 1</title>
 </head>
 <body>
   <header>
     <h1>Unit 1: I actually don't fucking know anymore</h1>
   </header>
   <a href="index.html"><- previous unit</a>
-  <section class="lesson">
-    <h2>Lesson 5: Family & Kindship</h2>
-    <p>Mâ /ma:/ Mom (feminine)</p>
-    <small>yes, mâ ends in 'a' but is still treated as a feminine noun.</small> <br>
-    <p>biâ /bja:/ dad </p>
-    <p>rôsayu /'ro:sayu/ sibling</p>
-    <p>koriuks /koˈɾjukʃ/ child</p>
-    <p class=ex>"Xief cet tîs mâ, peþ yat cet tîs biâ"</p>
-    <small>"She is my mom, and he is my dad"</small>
+  <main>
+    <section class="lesson">
+      <h2>Lesson 5: Family & Kindship</h2>
+      <p>Mâ /ma:/ Mom (feminine)</p>
+      <small>yes, mâ ends in 'a' but is still treated as a feminine noun.</small> <br>
+      <p>biâ /bja:/ dad </p>
+      <p>rôsayu /'ro:sayu/ sibling</p>
+      <p>koriuks /koˈɾjukʃ/ child</p>
+      <p class=ex>"Xief cet tîs mâ, peþ yat cet tîs biâ"</p>
+      <small>"She is my mom, and he is my dad"</small>
 
-    <p class="hhl">Which of the words in the sentence above means "my"?</p>
-    <small>(trust your gut)</small>
-    <br>
-    <input type="radio" name="l6p" value="cet"> cet <br>
-    <input type="radio" name="l6p" value="tîs"> tîs <br>
-    <input type="radio" name="l6p" value="yat"> yat <br>
-    <button onclick="checkRad('l6p', 'tîs', 'fb5')">submit</button>
-    <p id="fb5"></p>
-  </section>
-  <section class="lesson">
-    <h2>Lesson 6: To be & Pronouns</h2>
-    <p>In this lesson you're gonna learn all the pronouns and their respective conjugation of verb to be</p>
+      <p class="hhl">Which of the words in the sentence above means "my"?</p>
+      <small>(trust your gut)</small>
+      <br>
+      <input type="radio" name="l5p" value="cet"> cet <br>
+      <input type="radio" name="l5p" value="tîs"> tîs <br>
+      <input type="radio" name="l5p" value="yat"> yat <br>
+      <button onclick="checkRad('l5p', 'tîs', 'fb5')">submit</button>
+      <p class="feedback" id="fb5"></p>
+    </section>
+    <section class="lesson">
+      <h2>Lesson 6: To be & Pronouns</h2>
+      <p>In this lesson you're gonna learn all the pronouns and their respective conjugation of verb to be</p>
+      <table>
+        <tr>
+          <th>person</th>
+          <th>Koþronul</th>
+          <th>conjugation</th>
+          <th>possessive</th>
+        </tr>
+        <tr>
+          <td>1sg (I)</td>
+          <td>tov</td>
+          <td>frod</td>
+          <td>tîs</td>
+        </tr>
+        <tr>
+          <td>2sg (you)</td>
+          <td>muþ</td>
+          <td>ûþu</td>
+          <td>uþui</td>
+        </tr>
+        <tr>
+          <td>3sg-fem (she)</td>
+          <td>xief</td>
+          <td>cet</td>
+          <td>bis</td>
+        </tr>
+        <tr>
+          <td>3sg-masc (he)</td>
+          <td>yat</td>
+          <td>cet</td>
+          <td>vis</td>
+        </tr>
+        <tr>
+          <td>1pl-in (inclusive we)</td>
+          <td>ropsó</td>
+          <td>gria</td>
+          <td>yun</td>
+        </tr>
+        <tr>
+          <td>1pl-ex (exclusive we)</td>
+          <td>rôpso</td>
+          <td>gria</td>
+          <td>wam</td>
+        </tr>
+        <tr>
+          <td>2pl (y'all)</td>
+          <td>uþru</td>
+          <td>hslê</td>
+          <td>tris</td>
+        </tr>
+        <tr>
+          <td>3pl (they)</td>
+          <td>asvú</td>
+          <td>pi</td>
+          <td>pþa</td>
+        </tr>
+      </table>
 
-  </section>
+      <h3>Examples</h3>
+      <p class=ex>Frod ati koriuks</p>
+      <small>"I'm a child"</small><br>
+      <p class=ex>rôpso gria blosvenata fatorors</p>
+      <small>"We (exclusive) are eating bread"</small>
+
+      <h2>Practice!!</h2> 
+      <h3>How do you translate "He is my dad, she is my mom and they are your (singular) siblings"?</h3>
+      <small>hint: the plural of 'rôsayu' is 'rôsayulu'</small> <br>
+      <input type="text" id="l6">
+      <p class=feedback id=fb6></p>
+      <button onclick="checkAnswer('l6', 'yat cet tîs biâ, xief cet tîs mâ peþ asvú pi ûþu rôsayulu', 'yat cet tîs biâ, xief cet tîs mâ peth asvú pi ûthu rôsayulu', 'fb6')">Submit</button>
+    </section>
+    <section class="lesson">
+      <h2>Lesson 7: Introduce Yourself!</h2>
+      <p>To make it simple, in this lesson you're gonna learn just about everything you'll need to introduce yourself</p>
+      <small>of course it'll be a very simple introduction since we're just starting... we're not even in lesson 10</small><br><br><br><br>
+      <!-- <p>Vas: Hi/hello</p>
+      <p>piorobug: like (verb)</p>
+      <p></p> -->
+      <footer>
+        <small> this section is unfinished.......</small> <br>
+        <small>sorryy...........</small> <br>
+        <small>D;</small>
+      </footer>
+    </section>
+  </main>
   <script src="script.js"></script>
 </body>

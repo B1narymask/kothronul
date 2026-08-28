@@ -47,13 +47,14 @@ small {
 .feedback {
   color: #00000000;
   font-size: 1.25rem;
-  margin: 0 0;
+  margin: 0 auto;
+
 }
 
 button {
   background-color: var(--gloss);
   color: var(--white);
-  border: var(--idk) solid 0.29rem /*0.78rem*/;
+  border: var(--idk) solid 0.29rem;
   border-radius: 0.48rem;
 }
 
@@ -66,5 +67,11 @@ table, th, td {
 }
 
 th, td {
-  padding: 0.26rem;
+  padding: 0.46rem;
+}
+
+h2, h3, h1, h4, .c {
+  display:  flex;
+  justify-content: center;
+  align-content: center;
 }
