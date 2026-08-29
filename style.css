@@ -75,3 +75,7 @@ h2, h3, h1, h4, .c {
   justify-content: center;
   align-content: center;
 }
+
+.i {
+  font-family: Calibri;
+}
